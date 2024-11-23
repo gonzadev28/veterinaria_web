@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #22232496;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 1300px; /* Tamaño más pequeño */
+    margin-left: 400px; /* Para que el contenido no se ponga encima a la barra lateral */
+    padding: 10px;
+    background: #eaeeec;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacio entre secciones */
+    margin-top: 100px;
+    margin-right: 400px;
+    position: relative;
+}
+
+.form-title {
+    text-align: center;
+    color: #1a6fb0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    color: #3d3d3d;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reducir espacio entre los grupos de campos */
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.radio-group label, .checkbox-group label {
+    margin: 0;
+}
+
+/* Agrupar en dos columnas */
+.form-row {
+    display: flex;
+    gap: 20px; /* Espacio entre las dos columnas */
+    flex-wrap: wrap; /* Para que se acomoden en pantallas pequeñas */
+}
+
+.form-row .form-group {
+    flex: 1 1 45%; /* Cada campo ocupa el 45% del espacio */
+}
+
+/* Ajustar los botones para que no ocupen tanto espacio */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background: #00c9d7;
+    color: #fff;
+    border: none;
+    padding: 8px 18px; /* Botones más pequeños */
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #135a87;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 20px;
+}
+/* imagennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+.logo {
+    position: absolute;
+    top: 10px; /* distancia desde el borde superior */
+    left: 10px; /*  distancia desde el borde izquierdo */
+    width: 180px; /* Tamaño de la imagen */
+    height: auto; /* Mantener proporciones */
+}
+/* Estilos para la barra de navegaciónnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.nav-container {
+    width: auto; /* Ajustar al tamaño del contenido */
+    background-color: #2c3e50; /* Fondo azul */
+    text-align: right; /* Alinear al lado derecho */
+    padding: 10px 20px; /* Reducir el espacio interno */
+    padding-bottom: 41,5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    position: absolute; /* Ubicación precisa */
+    top: 0; /* Fijar en la parte superior */
+    right: 0; /* Fijar en la esquina derecha */
+    margin-left: 290px;
+    width: calc(100% - 290px);
+}
+
+.navbar {
+    display: inline-block; /* Mantener el ancho ajustado al contenido */
+}
+
+.nav-link {
+    color: white; /* Letras blancas */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 16px; /* Tamaño de texto */
+    margin: 0 15px; /* Espaciado entre botones */
+    font-weight: bold; /* Negrita */
+    padding: 5px 10px; /* Espaciado interno */
+    transition: color 0.3s, background-color 0.3s; /* Animación al pasar el mouse */
+}
+
+.nav-link:hover {
+    color: #FFCC00; /* Amarillo al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo  */
+    border-radius: 5px; /* Bordes redondeados */
+}
+/* aca empieza el container izquierdoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    position: fixed; /* Fijar al lado izquierdo y superior */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #34495e;
+    margin: 0; /* Elimina cualquier espacio extra */
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar-menu li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.sidebar-menu li:hover {
+    background-color: #34495e;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #34495e;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+
