@@ -1,0 +1,23 @@
+
+.logo{
+    text-align: center;
+    border-radius: 100px;
+}
+.opciones{
+    border: 50px;
+    background-color: #502c4e;
+}
+.login{
+    text-align: right;
+
+}
+img{
+    width: 400px;
+    height: 250px;
+    max-width: 100%;
+    
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
